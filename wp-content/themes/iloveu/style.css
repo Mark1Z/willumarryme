@@ -41,7 +41,7 @@ body {
 
 header,
 footer {
-    background: #74C274;
+    background-image: linear-gradient(to bottom, #5cb85c 0, #419641 100%);
     text-align: center;
 }
 
@@ -55,14 +55,240 @@ footer .container h1 {
 
 main {
     flex: 1 0 auto;
-    padding: 20px 0;
+    padding: 20px 15px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+main .container {
+    flex: 1 1 0px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+main .progress {
+    width: 100%;
+}
+
 main .navigation {
     text-align: center;
+}
+
+.redactor-content {
+    background-color: #fff;
+    word-wrap: break-word;
+}
+
+.redactor-content h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.redactor-content h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.redactor-content h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.redactor-content h4 {
+    display: block;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.redactor-content h5 {
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.redactor-content h6 {
+    display: block;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.redactor-content blockquote {
+    display: block;
+    font-style: italic;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.redactor-content a {
+    color: #3097D1;
+}
+
+.redactor-content a:link, .redactor-content a:visited {
+    text-decoration: underline;
+    cursor: auto;
+}
+
+.redactor-content img.right {
+    border: 1px solid #ccc;
+    float: right;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+.redactor-content img.left {
+    border: 1px solid #ccc;
+    float: left;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.redactor-content pre {
+    white-space: pre-wrap;
+    -moz-tab-size: 4;
+    tab-size: 4;
+}
+
+.redactor-content .marker {
+    background-color: Yellow;
+}
+
+.redactor-content figure {
+    text-align: center;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.redactor-content figure > figcaption {
+    display: block;
+    text-align: center;
+}
+
+.redactor-content a > img {
+    padding: 1px;
+    margin: 1px;
+    border: none;
+    outline: 1px solid #0782C1;
+}
+
+.redactor-content p {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.redactor-content dl {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.redactor-content dt {
+    display: block;
+}
+
+.redactor-content ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+.redactor-content ol {
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+.redactor-content li {
+    display: list-item;
+}
+
+.redactor-content b, .redactor-content strong {
+    font-weight: bold;
+}
+
+.redactor-content i, .redactor-content em {
+    font-style: italic;
+}
+
+.redactor-content table {
+    width: 100% !important;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+.redactor-content thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.redactor-content th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+}
+
+.redactor-content tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.redactor-content td {
+    display: table-cell;
+    vertical-align: inherit;
 }
 
 .heart {
