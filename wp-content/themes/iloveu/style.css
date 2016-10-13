@@ -455,11 +455,6 @@ main .navigation {
     }
 }
 
-body {
-    text-align: center;
-    padding: 50px;
-}
-
 /* Styles for old versions of IE */
 .heartbeat {
     font-family: sans-serif;
@@ -493,7 +488,7 @@ body {
 .heartbeat:not(:required):after, .heartbeat:not(:required):before {
     position: absolute;
     content: "";
-    background: #e87;
+    background: red;
 }
 
 .heartbeat:not(:required):before {
