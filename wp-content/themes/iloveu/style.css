@@ -21,7 +21,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -79,6 +79,7 @@ main .navigation {
 .redactor-content {
     background-color: #fff;
     word-wrap: break-word;
+    text-align: center;
 }
 
 .redactor-content h1 {
