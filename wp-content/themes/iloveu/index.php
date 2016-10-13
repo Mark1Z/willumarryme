@@ -9,6 +9,7 @@
     $args = [
         'posts_per_page' => 1,
         'post_type' => 'post',
+        'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
         'orderby' => 'menu_order',
         'order' => 'ASC',
     ];
