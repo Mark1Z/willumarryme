@@ -6,6 +6,16 @@
 <?php get_header(); ?>
 <div class="container">
     <?php
+    $pageIndex = (get_query_var('paged')) ? get_query_var('paged') : 1;
+    $progress = round(($pageIndex / wp_count_posts('post')->publish) * 100);
+    ?>
+    <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+             aria-valuenow="<?php echo $progress; ?>" aria-valuemin="0" aria-valuemax="100"
+             style="width: <?php echo $progress; ?>%">
+        </div>
+    </div>
+    <?php
     $args = [
         'posts_per_page' => 1,
         'post_type' => 'post',
@@ -26,8 +36,10 @@
         endwhile;
         wp_reset_postdata();
         ?>
-        <?php
-    endif;
-    ?>
+        <div class="navigation">
+            <?php previous_posts_link('Назад'); ?>
+            <?php next_posts_link('Вперед'); ?>
+        </div>
+    <?php endif; ?>
 </div>
 <?php get_footer(); ?>
