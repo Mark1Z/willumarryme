@@ -69,7 +69,7 @@ main .container {
 }
 
 main .container .redactor-content {
-    flex: 1 1 0px;
+    flex: 1 0 auto;
 }
 
 main .progress {

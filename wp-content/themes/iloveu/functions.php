@@ -24,8 +24,12 @@ function registerScripts()
     wp_enqueue_style('bootstrap');
     wp_register_style('bootstrap-theme', get_template_directory_uri() . '/resources/bootstrap/css/bootstrap-theme.min.css');
     wp_enqueue_style('bootstrap-theme');
+
     wp_register_style('styles', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('styles');
+
+    wp_register_script('scripts', get_template_directory_uri() . '/resources/js/script.js');
+    wp_enqueue_script('scripts');
 }
 
 add_action('wp_enqueue_scripts', 'registerScripts');
