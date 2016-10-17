@@ -25,3 +25,13 @@
     </div>
 </header>
 <main class="main">
+    <?php
+    $pageIndex = (get_query_var('paged')) ? get_query_var('paged') : 1;
+    $progress = round(($pageIndex / wp_count_posts('post')->publish) * 100);
+    ?>
+    <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+             aria-valuenow="<?php echo $progress; ?>" aria-valuemin="0" aria-valuemax="100"
+             style="width: <?php echo $progress; ?>%">
+        </div>
+    </div>
