@@ -16,6 +16,7 @@
     <meta name="language" content="en"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ILoveU</title>
+    <link href="https://fonts.googleapis.com/css?family=Neucha&amp;subset=cyrillic" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 <body>
