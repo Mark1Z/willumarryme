@@ -27,12 +27,6 @@ function registerScripts()
 
     wp_register_style('styles', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('styles');
-
-    wp_register_script('imagesloaded', get_template_directory_uri() . '/resources/js/jquery.imagesloaded.js');
-    wp_enqueue_script('imagesloaded');
-
-    wp_register_script('scripts', get_template_directory_uri() . '/resources/js/script.js');
-    wp_enqueue_script('scripts');
 }
 
 add_action('wp_enqueue_scripts', 'registerScripts');

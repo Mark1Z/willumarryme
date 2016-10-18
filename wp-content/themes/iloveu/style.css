@@ -79,6 +79,10 @@ main .navigation {
     text-align: center;
 }
 
+.btn {
+    font: 18px/20px 'Neucha', sans-serif;
+}
+
 .redactor-content {
     background-color: #fff;
     word-wrap: break-word;
