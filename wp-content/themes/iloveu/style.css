@@ -36,7 +36,7 @@ body {
     flex-direction: column;
     transition: none !important;
     position: static !important;
-    font: 18px/21px 'Neucha', sans-serif;
+    font: 18px/20px 'Neucha', sans-serif;
 }
 
 header,
@@ -81,7 +81,7 @@ main .navigation {
 }
 
 .btn {
-    font: 18px/21px 'Neucha', sans-serif;
+    font: 18px/20px 'Neucha', sans-serif;
 }
 
 .redactor-content {
